@@ -29,7 +29,7 @@ app.use(fileUpload({
 app.use('/api/newworks', require('./routes/newworkRoute.js'));
 
 // listen to server in a port
-const port = 5000
+const port = process.env.PORT
 app.listen(port, () => {
   console.log("Server running...", port)
 })
